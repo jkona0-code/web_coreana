@@ -16,7 +16,7 @@ export default function Header({ onOpenCart, activeCategory, onCategorySelect, s
       <div className="header-inner">
         {/* Logo */}
         <Link to="/" className="brand" aria-label="Ir al inicio">
-          <img src="/img/Beautyk%20logo.jpg" alt="BeautyK" className="brand-logo" />
+          <img src={`${import.meta.env.BASE_URL}img/Beautyk%20logo.jpg`} alt="BeautyK" className="brand-logo" />
           <span className="brand-name">{STORE_NAME}</span>
         </Link>
 
