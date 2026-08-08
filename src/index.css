@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  /* Paleta — inspirada en YesStyle: limpia, blanca, con acentos negros */
+  --paper: #ffffff;
+  --paper-soft: #fafafa;
+  --paper-warm: #f8f6f3;
+  --ink: #1a1a1a;
+  --ink-soft: #6b6b6b;
+  --ink-muted: #999999;
+  --jade: #2d8c5a;
+  --jade-dark: #1f6e45;
+  --jade-tint: #e8f5ee;
+  --jade-light: #4caf50;
+  --peach: #e8a87c;
+  --peach-dark: #c9834f;
+  --peach-tint: #fbeadb;
+  --blush-tint: #f6e3e1;
+  --sand: #e5e5e5;
+  --sand-tint: #f0f0f0;
+  --danger: #d32f2f;
+  --accent: #1a1a1a;
+  --accent-hover: #333333;
+  --border: #e0e0e0;
+  --border-light: #efefef;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --shadow-soft: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-modal: 0 24px 64px rgba(0, 0, 0, 0.2);
+
+  --header-height: 60px;
+  --max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  margin: 0;
+  color: var(--ink);
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+input,
+textarea {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--jade);
+  outline-offset: 2px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--jade-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
