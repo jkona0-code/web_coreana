@@ -2094,3 +2094,42 @@
     font-size: 0.88rem;
   }
 }
+
+/* ========================================
+   RESPONSIVO PARA CELULARES Y TABLETS
+   ======================================== */
+@media (max-width: 768px) {
+  .header-inner {
+    height: auto;
+    padding: 0.6rem 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .brand-logo {
+    height: 36px;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  /* Ocultamos las categorías del menú en pantalla pequeña para evitar saturación */
+  .header-nav {
+    display: none;
+  }
+
+  /* El carrito y botones siempre quedan visibles a la derecha */
+  .header-actions {
+    margin-left: auto;
+    gap: 0.2rem;
+  }
+
+  /* La barra de búsqueda pasa a una segunda fila abarcando todo el ancho */
+  .header-search {
+    order: 3;
+    width: 100%;
+    min-width: 0;
+    margin-top: 0.3rem;
+  }
+}
